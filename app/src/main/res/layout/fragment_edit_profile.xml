@@ -1,0 +1,735 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.EditProfileFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvAddEmp"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:background="@drawable/edittext_background_yellow"
+                android:visibility="visible"
+                android:gravity="center"
+                android:textColor="@color/colorWhite"
+                android:padding="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_gravity="end"
+                android:text="Add Employee"
+                />
+
+            <TextView
+                android:id="@+id/tvEmpList"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:background="@drawable/edittext_background"
+                android:visibility="visible"
+                android:gravity="center"
+                android:textColor="@color/colorWhite"
+                android:padding="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_gravity="end"
+                android:text="Employee List"
+                />
+
+        </LinearLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:fontFamily="@font/sf_ui_regular"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="25dp"
+            android:gravity="bottom">
+
+            <EditText
+                android:id="@+id/edFranchiseeName"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:hint="Franchisee Name"
+                android:background="@drawable/login_background"
+                android:fontFamily="@font/sf_ui_regular"
+                android:inputType="text"
+                android:maxLines="1"
+                android:padding="10dp"
+                android:singleLine="true"  />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:fontFamily="@font/sf_ui_regular"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="25dp"
+            android:gravity="bottom">
+
+            <EditText
+                android:id="@+id/edEmailId"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@drawable/login_background"
+                android:fontFamily="@font/sf_ui_regular"
+                android:inputType="text"
+                android:maxLines="1"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:hint="Email Id"
+                />
+        </android.support.design.widget.TextInputLayout>
+
+        <TextView
+            android:id="@+id/tvImageLable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:fontFamily="@font/sf_ui_regular"
+            android:text="Franchisee Profile Pic"
+            android:textColor="@color/colorPrimary"
+            android:visibility="visible"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/linearLayoutImage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal"
+            android:visibility="visible">
+
+            <ImageView
+                android:id="@+id/ivCamera1"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_margin="5dp"
+                android:padding="10dp"
+                android:src="@drawable/circle_shap" />
+
+            <ImageView
+                android:id="@+id/ivPhoto1"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="5dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvPhoto1"
+                android:visibility="gone"/>
+
+
+        </LinearLayout>
+
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:fontFamily="@font/sf_ui_regular"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="25dp"
+            android:gravity="bottom">
+
+            <EditText
+                android:id="@+id/edMobileNo"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@drawable/login_background"
+                android:fontFamily="@font/sf_ui_regular"
+                android:inputType="text"
+                android:maxLines="1"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:hint="Mobile No"
+                />
+        </android.support.design.widget.TextInputLayout>
+
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:fontFamily="@font/sf_ui_regular"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="25dp"
+            android:gravity="bottom">
+
+            <EditText
+                android:id="@+id/edOwnerName"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@drawable/login_background"
+                android:fontFamily="@font/sf_ui_regular"
+                android:inputType="text"
+                android:maxLines="1"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:hint="Owner Name"
+               />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:fontFamily="@font/sf_ui_regular"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="25dp"
+            android:gravity="bottom">
+
+            <EditText
+                android:id="@+id/edCity"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@drawable/login_background"
+                android:fontFamily="@font/sf_ui_regular"
+                android:inputType="text"
+                android:maxLines="1"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:hint="City"
+                />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:fontFamily="@font/sf_ui_regular"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="25dp"
+            android:gravity="bottom">
+
+            <EditText
+                android:id="@+id/edRateType"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@drawable/button_background_solid"
+                android:fontFamily="@font/sf_ui_regular"
+                android:inputType="text"
+                android:maxLines="1"
+                android:focusable="false"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:hint="Rate Type"
+               />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:fontFamily="@font/sf_ui_regular"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="25dp"
+            android:gravity="bottom">
+
+            <EditText
+                android:id="@+id/edRoute"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@drawable/button_background_solid"
+                android:fontFamily="@font/sf_ui_regular"
+                android:inputType="text"
+                android:maxLines="1"
+                android:focusable="false"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:hint="Route"
+                 />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:fontFamily="@font/sf_ui_regular"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="25dp"
+            android:gravity="bottom">
+
+            <EditText
+                android:id="@+id/edDistance"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@drawable/button_background_solid"
+                android:fontFamily="@font/sf_ui_regular"
+                android:inputType="text"
+                android:maxLines="1"
+                android:focusable="false"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:hint="Distance (Km)"
+                />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:fontFamily="@font/sf_ui_regular"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="25dp"
+            android:gravity="bottom">
+
+            <EditText
+                android:id="@+id/edTaxType"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@drawable/button_background_solid"
+                android:fontFamily="@font/sf_ui_regular"
+                android:inputType="text"
+                android:focusable="false"
+                android:maxLines="1"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:hint="Tax Type"
+               />
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:fontFamily="@font/sf_ui_regular"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="25dp"
+            android:gravity="bottom">
+
+            <EditText
+                android:id="@+id/edIsOwnStore"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@drawable/button_background_solid"
+                android:fontFamily="@font/sf_ui_regular"
+                android:inputType="text"
+                android:maxLines="1"
+                android:focusable="false"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:hint="Is Own Store"
+               />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:fontFamily="@font/sf_ui_regular"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="25dp"
+            android:gravity="bottom">
+
+            <EditText
+                android:id="@+id/edPinCode"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@drawable/button_background_solid"
+                android:fontFamily="@font/sf_ui_regular"
+                android:inputType="text"
+                android:maxLines="1"
+                android:focusable="false"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:hint="Pin Code"
+                 />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:fontFamily="@font/sf_ui_regular"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="25dp"
+            android:gravity="bottom">
+
+            <EditText
+                android:id="@+id/edShopOpeningDate"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@drawable/button_background_solid"
+                android:fontFamily="@font/sf_ui_regular"
+                android:inputType="text"
+                android:maxLines="1"
+                android:focusable="false"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:hint="Shop Opening Date"
+                 />
+        </android.support.design.widget.TextInputLayout>
+
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:fontFamily="@font/sf_ui_regular"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="25dp"
+            android:gravity="bottom">
+
+            <EditText
+                android:id="@+id/edOwnersBirthdate"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@drawable/button_background_solid"
+                android:fontFamily="@font/sf_ui_regular"
+                android:inputType="text"
+                android:maxLines="1"
+                android:focusable="false"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:hint="Owner's Birthdate"
+                 />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:fontFamily="@font/sf_ui_regular"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="25dp"
+            android:gravity="bottom">
+
+            <EditText
+                android:id="@+id/edAgreementDate"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@drawable/button_background_solid"
+                android:fontFamily="@font/sf_ui_regular"
+                android:inputType="text"
+                android:maxLines="1"
+                android:focusable="false"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:hint="Agreement Date"
+                />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:fontFamily="@font/sf_ui_regular"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="25dp"
+            android:gravity="bottom">
+
+            <EditText
+                android:id="@+id/edFDALicenseNo"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@drawable/button_background_solid"
+                android:fontFamily="@font/sf_ui_regular"
+                android:inputType="text"
+                android:maxLines="1"
+                android:padding="10dp"
+                android:focusable="false"
+                android:singleLine="true"
+                android:hint="FDA License No"
+                />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:fontFamily="@font/sf_ui_regular"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="25dp"
+            android:gravity="bottom">
+
+            <EditText
+                android:id="@+id/edPestControlDate"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@drawable/button_background_solid"
+                android:fontFamily="@font/sf_ui_regular"
+                android:inputType="text"
+                android:maxLines="1"
+                android:focusable="false"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:hint="Pest Control Date"
+               />
+        </android.support.design.widget.TextInputLayout>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:fontFamily="@font/sf_ui_regular"
+            android:text="Change Password"
+            android:textColor="@color/colorPrimary"
+            android:visibility="gone"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:visibility="gone"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnAdmin"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:background="@drawable/edittext_background_yellow"
+                android:text="Admin"
+                android:visibility="visible"
+                android:gravity="center"
+                android:textColor="@color/colorWhite"
+                android:padding="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_gravity="end" />
+
+            <Button
+                android:id="@+id/btnCashier"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:background="@drawable/edittext_background_green"
+                android:text="Cashier"
+                android:visibility="visible"
+                android:gravity="center"
+                android:textColor="@color/colorWhite"
+                android:padding="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_gravity="end" />
+
+            <Button
+                android:id="@+id/btnManager"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:background="@drawable/edittext_background"
+                android:text="Manager"
+                android:padding="10dp"
+                android:textColor="@color/colorWhite"
+                android:visibility="visible"
+                android:gravity="center"
+                android:layout_marginRight="10dp"
+                android:layout_gravity="end" />
+
+        </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llAdmin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:visibility="gone"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1.5"
+            android:fontFamily="@font/sf_ui_regular"
+            android:text="Admin Password : "
+            android:textColor="@color/colorBlack"
+            android:visibility="visible"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvAdminPass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/sf_ui_regular"
+            android:inputType="numberPassword"
+            android:hint="Enter Admin Password"
+            android:padding="10dp"
+            android:background="@drawable/login_background"
+            android:textColor="@color/colorBlack"
+            android:visibility="visible"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+        <Button
+            android:id="@+id/btnSubmitPass"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:text="Submit"
+            android:visibility="gone"
+            android:layout_gravity="end"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:textColor="@color/colorWhite"
+            android:background="@drawable/edittext_background_yellow"
+            android:layout_marginRight="20dp"/>
+
+
+        <LinearLayout
+            android:id="@+id/llCashier"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:visibility="visible"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvCashierLable"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1.5"
+                android:fontFamily="@font/sf_ui_regular"
+                android:text="Edit Cashier Password : "
+                android:textColor="@color/colorBlack"
+                android:visibility="visible"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvCashierPass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/sf_ui_regular"
+                android:inputType="numberPassword"
+                android:hint="CPS Password"
+                android:padding="10dp"
+                android:background="@drawable/login_background"
+                android:textColor="@color/colorBlack"
+                android:visibility="visible"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llCashierConfirm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:visibility="visible"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvCashierLableConfi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1.5"
+                android:fontFamily="@font/sf_ui_regular"
+                android:text="Confirm  Cashier Password : "
+                android:textColor="@color/colorBlack"
+                android:visibility="visible"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvCashierPassConfi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/sf_ui_regular"
+                android:inputType="numberPassword"
+                android:hint="CPS Password"
+                android:padding="10dp"
+                android:background="@drawable/login_background"
+                android:textColor="@color/colorBlack"
+                android:visibility="visible"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvUpdatePass"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:background="@drawable/edittext_background_yellow"
+                    android:visibility="visible"
+                    android:gravity="center"
+                    android:textColor="@color/colorWhite"
+                    android:padding="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_gravity="end"
+                    android:text="Update Password"
+                    />
+
+                <TextView
+                    android:id="@+id/tvCancel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:background="@drawable/edittext_background"
+                    android:visibility="visible"
+                    android:gravity="center"
+                    android:textColor="@color/colorWhite"
+                    android:padding="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_gravity="end"
+                    android:text="Cancel"
+                    />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnSubmit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/edittext_background"
+            android:fontFamily="@font/sf_ui_bold"
+            android:text="Submit"
+            android:textColor="@color/colorWhite" />
+    </LinearLayout>
+</ScrollView>

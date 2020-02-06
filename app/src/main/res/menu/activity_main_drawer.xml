@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home"
+            android:title="Dashobard" />
+        <item
+            android:id="@+id/nav_pettyCash"
+            android:icon="@drawable/ic_cash"
+            android:title="Petty Cash" />
+
+        <item
+            android:id="@+id/nav_addExpense"
+            android:icon="@drawable/ic_expense"
+            android:title="Add Expense" />
+
+        <item
+            android:id="@+id/nav_expenseList"
+            android:icon="@drawable/ic_expense_list"
+            android:title="Expense List" />
+
+        <item
+            android:id="@+id/nav_editProfile"
+            android:icon="@drawable/ic_edit"
+            android:title="Edit Profile" />
+
+
+    </group>
+
+</menu>
